@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF123-原版精品海量热血传奇怀旧传奇SiFu发布站</title>
+    <meta name="keywords" content="sf123,传奇私服,热血传奇,怀旧传奇,传奇发布站,传奇SF,传奇私服发布,1.76传奇,复古传奇,传奇服务器">
+    <meta name="description" content="SF123是专业的热血传奇怀旧私服发布站，汇聚海量原版精品传奇服务器，提供最新开服信息、复古传奇攻略及怀旧传奇资讯，找传奇SF就上SF123发布站。">
+    <meta name="author" content="SF123">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="./">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif; background: #0a0a12; color: #d4d4d4; line-height: 1.7; min-height: 100vh; }
+        a { color: #f5c842; text-decoration: none; transition: color .25s; }
+        a:hover { color: #ff6a00; text-decoration: underline; }
+        img { max-width: 100%; height: auto; display: block; }
+        h1,h2,h3,h4 { font-weight: 700; }
+        body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 20% 50%, rgba(120,40,200,0.08) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, rgba(255,100,0,0.06) 0%, transparent 50%); pointer-events: none; z-index: 0; }
+        .site-header { position: relative; z-index: 10; background: linear-gradient(180deg, #12121e 0%, #1a1a2e 100%); border-bottom: 2px solid #f5c842; }
+        .header-top { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 15px 20px; flex-wrap: wrap; gap: 10px; }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { width: 56px; height: 56px; background: linear-gradient(135deg, #f5c842, #ff6a00); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 900; color: #1a1a2e; box-shadow: 0 0 20px rgba(245,200,66,0.4); }
+        .logo-text h1 { font-size: 22px; background: linear-gradient(90deg, #f5c842, #ff6a00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: 2px; }
+        .logo-text p { font-size: 12px; color: #888; margin-top: 2px; }
+        .header-datetime { text-align: right; font-size: 13px; color: #aaa; }
+        .header-datetime .date-str { color: #f5c842; font-weight: 600; }
+        .header-datetime .time-str { font-size: 20px; color: #fff; font-weight: 700; }
+        .site-nav { background: #16162a; border-bottom: 1px solid #2a2a4a; }
+        .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; padding: 0 20px; overflow-x: auto; }
+        .nav-inner a { display: inline-block; padding: 12px 22px; font-size: 14px; color: #ccc; white-space: nowrap; border-bottom: 2px solid transparent; transition: all .25s; }
+        .nav-inner a:hover, .nav-inner a.active { color: #f5c842; border-bottom-color: #f5c842; background: rgba(245,200,66,0.05); text-decoration: none; }
+        .main-container { position: relative; z-index: 10; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .hero-banner { position: relative; border-radius: 16px; overflow: hidden; margin-bottom: 30px; box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
+        .hero-banner .hero-img { width: 100%; height: 340px; object-fit: cover; }
+        .hero-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(10,10,18,0.95)); padding: 40px 30px 25px; }
+        .hero-overlay h2 { font-size: 28px; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        .hero-overlay h2 span { color: #f5c842; }
+        .hero-overlay p { margin-top: 8px; font-size: 14px; color: #bbb; }
+        .section-title { display: flex; align-items: center; gap: 12px; margin: 35px 0 20px; padding-bottom: 12px; border-bottom: 1px solid #2a2a4a; }
+        .section-title::before { content: ''; width: 4px; height: 24px; background: linear-gradient(180deg, #f5c842, #ff6a00); border-radius: 2px; }
+        .section-title h2 { font-size: 22px; color: #fff; }
+        .section-title .more-link { margin-left: auto; font-size: 13px; color: #888; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        .card { background: #16162a; border: 1px solid #2a2a4a; border-radius: 12px; overflow: hidden; transition: transform .3s, box-shadow .3s; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(245,200,66,0.1); }
+        .card-img { width: 100%; height: 180px; object-fit: cover; }
+        .card-body { padding: 16px; }
+        .card-body h3 { font-size: 16px; color: #eee; margin-bottom: 8px; line-height: 1.4; }
+        .card-body h3 a { color: #eee; }
+        .card-body h3 a:hover { color: #f5c842; text-decoration: none; }
+        .card-body p { font-size: 13px; color: #999; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .card-meta { padding: 10px 16px; border-top: 1px solid #2a2a4a; font-size: 12px; color: #666; display: flex; justify-content: space-between; align-items: center; }
+        .card-tag { display: inline-block; padding: 2px 8px; background: rgba(245,200,66,0.15); color: #f5c842; border-radius: 4px; font-size: 11px; }
+        .server-table { width: 100%; border-collapse: collapse; background: #16162a; border-radius: 12px; overflow: hidden; border: 1px solid #2a2a4a; }
+        .server-table thead { background: linear-gradient(90deg, #1e1e3a, #2a2a4a); }
+        .server-table th { padding: 14px 16px; text-align: left; font-size: 13px; color: #f5c842; font-weight: 600; }
+        .server-table td { padding: 12px 16px; font-size: 13px; color: #ccc; border-top: 1px solid #1e1e3a; }
+        .server-table tr:hover td { background: rgba(245,200,66,0.03); }
+        .btn-enter { display: inline-block; padding: 4px 14px; background: linear-gradient(135deg, #f5c842, #ff6a00); color: #1a1a2e; border-radius: 6px; font-size: 12px; font-weight: 700; }
+        .btn-enter:hover { text-decoration: none; opacity: .85; color: #1a1a2e; }
+        .status-open { color: #4caf50; }
+        .status-soon { color: #ff9800; }
+        .news-list { list-style: none; }
+        .news-list li { padding: 14px 0; border-bottom: 1px dashed #2a2a4a; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .news-list li:last-child { border-bottom: none; }
+        .news-list .news-title { flex: 1; font-size: 14px; color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .news-list .news-title::before { content: '▸ '; color: #f5c842; }
+        .news-list .news-title a { color: #ccc; }
+        .news-list .news-title a:hover { color: #f5c842; }
+        .news-list .news-date { font-size: 12px; color: #666; white-space: nowrap; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+        .gallery-item { position: relative; border-radius: 10px; overflow: hidden; cursor: pointer; }
+        .gallery-item img { width: 100%; height: 160px; object-fit: cover; transition: transform .4s; }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-item .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 20px 10px 10px; font-size: 12px; color: #fff; }
+        .content-with-sidebar { display: grid; grid-template-columns: 1fr 320px; gap: 25px; }
+        .sidebar .widget { background: #16162a; border: 1px solid #2a2a4a; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+        .widget-title { font-size: 16px; color: #f5c842; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #2a2a4a; }
+        .hot-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .hot-tags a { display: inline-block; padding: 5px 12px; background: rgba(245,200,66,0.08); border: 1px solid #2a2a4a; border-radius: 6px; font-size: 12px; color: #ccc; transition: all .25s; }
+        .hot-tags a:hover { background: rgba(245,200,66,0.2); color: #f5c842; border-color: #f5c842; text-decoration: none; }
+        .rank-list { list-style: none; counter-reset: rank; }
+        .rank-list li { counter-increment: rank; padding: 10px 0; border-bottom: 1px dashed #2a2a4a; display: flex; align-items: center; gap: 10px; font-size: 13px; }
+        .rank-list li:last-child { border-bottom: none; }
+        .rank-list li::before { content: counter(rank); width: 22px; height: 22px; background: #2a2a4a; color: #999; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }
+        .rank-list li:nth-child(1)::before { background: #f5c842; color: #1a1a2e; }
+        .rank-list li:nth-child(2)::before { background: #c0c0c0; color: #1a1a2e; }
+        .rank-list li:nth-child(3)::before { background: #cd7f32; color: #1a1a2e; }
+        .rank-list li a { color: #ccc; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .rank-list li a:hover { color: #f5c842; }
+        .ad-section { margin: 30px 0; border-radius: 12px; overflow: hidden; }
+        .site-footer { position: relative; z-index: 10; margin-top: 50px; background: #12121e; border-top: 2px solid #f5c842; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+        .footer-links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #2a2a4a; }
+        .footer-links a { font-size: 13px; color: #999; padding: 4px 0; }
+        .footer-links a:hover { color: #f5c842; }
+        .footer-keywords { margin-bottom: 20px; }
+        .footer-keywords h4 { font-size: 14px; color: #888; margin-bottom: 10px; }
+        .footer-keywords .kw-links { display: flex; flex-wrap: wrap; gap: 6px 12px; }
+        .footer-keywords .kw-links a { font-size: 12px; color: #777; }
+        .footer-keywords .kw-links a:hover { color: #f5c842; }
+        .footer-copyright { text-align: center; font-size: 12px; color: #555; padding-top: 15px; }
+        .footer-copyright p { margin: 3px 0; }
+        .back-top { position: fixed; bottom: 30px; right: 30px; width: 44px; height: 44px; background: linear-gradient(135deg, #f5c842, #ff6a00); color: #1a1a2e; border: none; border-radius: 50%; font-size: 20px; cursor: pointer; box-shadow: 0 4px 15px rgba(245,200,66,0.3); display: none; align-items: center; justify-content: center; z-index: 999; transition: opacity .3s; }
+        .back-top.show { display: flex; }
+        @media (max-width: 960px) { .content-with-sidebar { grid-template-columns: 1fr; } .grid-3 { grid-template-columns: repeat(2, 1fr); } .grid-4, .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } .grid-4, .gallery-grid { grid-template-columns: repeat(2, 1fr); } .hero-banner .hero-img { height: 200px; } .hero-overlay h2 { font-size: 20px; } .header-top { flex-direction: column; text-align: center; } .header-datetime { text-align: center; } .nav-inner a { padding: 10px 14px; font-size: 13px; } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-in { animation: fadeInUp .6s ease forwards; }
+        .notice-bar { background: linear-gradient(90deg, #1e1e3a, #2a2a4a); border-radius: 8px; padding: 10px 16px; margin-bottom: 25px; display: flex; align-items: center; gap: 12px; overflow: hidden; }
+        .notice-bar .label { background: #f5c842; color: #1a1a2e; padding: 2px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+        .notice-bar .marquee { flex: 1; overflow: hidden; position: relative; height: 22px; }
+        .notice-bar .marquee-inner { position: absolute; white-space: nowrap; animation: marqueeScroll 25s linear infinite; font-size: 13px; color: #ddd; }
+        @keyframes marqueeScroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="header-top">
+        <div class="logo">
+            <div class="logo-icon">SF</div>
+            <div class="logo-text">
+                <h1>SF123 传奇发布站</h1>
+                <p>原版精品 · 海量热血传奇 · 怀旧经典</p>
+            </div>
+        </div>
+        <div class="header-datetime">
+            <div class="date-str" id="headerDate">加载中...</div>
+            <div class="time-str" id="headerTime">--:--:--</div>
+        </div>
+    </div>
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#" class="active">首页</a>
+            <a href="#">新开传奇</a>
+            <a href="#">复古版本</a>
+            <a href="#">1.76精品</a>
+            <a href="#">1.80合击</a>
+            <a href="#">单职业</a>
+            <a href="#">超变传奇</a>
+            <a href="#">游戏攻略</a>
+            <a href="#">玩家社区</a>
+        </div>
+    </nav>
+</header>
+
+<div class="ad-section">
+    <div id="wd_ad_box"></div>
+    <script>
+    (function(){
+      var adBox = document.getElementById('wd_ad_box');
+      if(!adBox) return;
+      var f = document.createElement('iframe');
+      f.setAttribute('frameborder','0');
+      f.setAttribute('scrolling','no');
+      f.setAttribute('name','WD123');
+      f.setAttribute('align','center');
+      f.setAttribute('width','100%');
+      f.setAttribute('height','4000');
+      f.setAttribute('vspace','-0');
+      f.setAttribute('loading','lazy');
+      f.src = 'https://www.3000ok.ws/' + '3000ok.html';
+      adBox.appendChild(f);
+    })();
+    </script>
+</div>
+
+<main class="main-container">
+    <div class="notice-bar">
+        <span class="label">📢 公告</span>
+        <div class="marquee">
+            <div class="marquee-inner">欢迎来到SF123传奇发布站！本站每日更新最新开区信息，收录精品复古传奇、1.76怀旧版、1.80星王合击、单职业切割等热门版本，找传奇SF首选SF123！</div>
+        </div>
+    </div>
+
+    <section class="hero-banner animate-in">
+        <img class="hero-img" src="https://picsum.photos/seed/legend-hero-retro/1200/400" alt="SF123热血传奇怀旧复古游戏画面 - 经典沙巴克攻城战">
+        <div class="hero-overlay">
+            <h2>🔥 <span>SF123</span> — 找回你的传奇岁月</h2>
+            <p>每日精选新开传奇私服，原版复刻1.76/1.80/我本沉默经典版本，万人在线热血攻城</p>
+        </div>
+    </section>
+
+    <div class="section-title"><h2>🗡️ 今日开服推荐</h2><a href="#" class="more-link">查看更多 &raquo;</a></div>
+    <div class="grid-3">
+        <article class="card animate-in">
+            <img class="card-img" src="https://picsum.photos/seed/retro-warrior-sword/400/240" alt="复古传奇战士职业 - 1.76经典版本游戏截图">
+            <div class="card-body"><h3><a href="#">龙腾复古传奇 — 1.76金币版 原汁原味</a></h3><p>经典1.76复古版本，无英雄无内功，纯手工打怪升级。三大职业平衡设定，重现当年沙巴克攻城激情。</p></div>
+            <div class="card-meta"><span class="card-tag">1.76复古</span><span class="js-date">今日开服</span></div>
+        </article>
+        <article class="card animate-in">
+            <img class="card-img" src="https://picsum.photos/seed/retro-magic-castle/400/240" alt="传奇法师技能特效 - 复古游戏魔法画面">
+            <div class="card-body"><h3><a href="#">霸业合击 — 1.80星王版本 英雄合击</a></h3><p>1.80英雄合击版本，支持战战、法法、道道等多种组合。独创星王装备体系，PK爆装刺激爽快。</p></div>
+            <div class="card-meta"><span class="card-tag">1.80合击</span><span class="js-date">今日开服</span></div>
+        </article>
+        <article class="card animate-in">
+            <img class="card-img" src="https://picsum.photos/seed/retro-dragon-fire/400/240" alt="传奇道士召唤神兽 - 经典复古游戏场景">
+            <div class="card-body"><h3><a href="#">战神单职业 — 切割无限刀 爽到起飞</a></h3><p>全新单职业切割版本，刀刀暴击、刀刀切割。上线即送满级VIP，装备全靠打，散人也能称霸全服。</p></div>
+            <div class="card-meta"><span class="card-tag">单职业</span><span class="js-date">今日开服</span></div>
+        </article>
+    </div>
+
+    <div class="section-title"><h2>📋 最新开服表</h2><a href="#" class="more-link">完整列表 &raquo;</a></div>
+    <table class="server-table">
+        <thead><tr><th>服务器名称</th><th>版本类型</th><th>开服时间</th><th>状态</th><th>操作</th></tr></thead>
+        <tbody>
+            <tr><td><strong>龙腾复古</strong></td><td>1.76金币版</td><td class="js-datetime-cell">加载中</td><td><span class="status-open">● 已开区</span></td><td><a href="#" class="btn-enter">进入游戏</a></td></tr>
+            <tr><td><strong>霸业合击</strong></td><td>1.80星王</td><td class="js-datetime-cell">加载中</td><td><span class="status-open">● 已开区</span></td><td><a href="#" class="btn-enter">进入游戏</a></td></tr>
+            <tr><td><strong>烈焰传奇</strong></td><td>我本沉默</td><td class="js-datetime-cell">加载中</td><td><span class="status-open">● 已开区</span></td><td><a href="#" class="btn-enter">进入游戏</a></td></tr>
+            <tr><td><strong>战神觉醒</strong></td><td>单职业切割</td><td class="js-datetime-cell">加载中</td><td><span class="status-soon">● 即将开区</span></td><td><a href="#" class="btn-enter">预约</a></td></tr>
+            <tr><td><strong>盛世龙城</strong></td><td>1.76复古</td><td class="js-datetime-cell">加载中</td><td><span class="status-open">● 已开区</span></td><td><a href="#" class="btn-enter">进入游戏</a></td></tr>
+            <tr><td><strong>王者归来</strong></td><td>超变微端</td><td class="js-datetime-cell">加载中</td><td><span class="status-soon">● 即将开区</span></td><td><a href="#" class="btn-enter">预约</a></td></tr>
+            <tr><td><strong>热血传说</strong></td><td>1.85玉兔</td><td class="js-datetime-cell">加载中</td><td><span class="status-open">● 已开区</span></td><td><a href="#" class="btn-enter">进入游戏</a></td></tr>
+            <tr><td><strong>不灭战纪</strong></td><td>中变靓装</td><td class="js-datetime-cell">加载中</td><td><span class="status-open">● 已开区</span></td><td><a href="#" class="btn-enter">进入游戏</a></td></tr>
+        </tbody>
+    </table>
+
+    <div class="section-title"><h2>📰 传奇资讯 & 攻略</h2></div>
+    <div class="content-with-sidebar">
+        <div class="main-content">
+            <div class="grid-2">
+                <article class="card">
+                    <img class="card-img" src="https://picsum.photos/seed/retro-dungeon-dark/400/240" alt="传奇石墓阵地图攻略 - 复古游戏地牢场景">
+                    <div class="card-body"><h3><a href="#">新手必看：石墓阵走法全解析 不再迷路</a></h3><p>石墓阵是传奇中最经典的地图之一，本文详细介绍各层走法及BOSS刷新时间，帮你快速找到猪洞七层。</p></div>
+                    <div class="card-meta"><span class="card-tag">攻略</span><span class="js-date"></span></div>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="https://picsum.photos/seed/retro-armor-shield/400/240" alt="传奇顶级装备展示 - 复古游戏装备截图">
+                    <div class="card-body"><h3><a href="#">1.76版本最强装备排行 你集齐了几件？</a></h3><p>盘点1.76版本中最具价值的顶级装备：裁决之杖、屠龙刀、嗜魂法杖……每一件都是梦寐以求的神器。</p></div>
+                    <div class="card-meta"><span class="card-tag">装备</span><span class="js-date"></span></div>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="https://picsum.photos/seed/retro-siege-battle/400/240" alt="沙巴克攻城战 - 经典传奇攻城画面">
+                    <div class="card-body"><h3><a href="#">沙巴克攻城战术大全 行会长必读指南</a></h3><p>攻沙是传奇最热血的核心玩法。从人员分配、复活点控制到旗帜争夺，全方位解析攻城战术与配合技巧。</p></div>
+                    <div class="card-meta"><span class="card-tag">PVP</span><span class="js-date"></span></div>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="https://picsum.photos/seed/retro-potion-craft/400/240" alt="传奇药品系统 - 复古游戏炼药画面">
+                    <div class="card-body"><h3><a href="#">散人赚钱攻略 不花一分钱也能全身神装</a></h3><p>从挖矿、打宝到摆摊交易，分享多个实用赚钱方法，让你白手起家也能成为服务器富豪。</p></div>
+                    <div class="card-meta"><span class="card-tag">赚钱</span><span class="js-date"></span></div>
+                </article>
+            </div>
+            <div class="section-title" style="margin-top:25px;"><h2>📌 最新资讯</h2></div>
+            <div style="background:#16162a;border:1px solid #2a2a4a;border-radius:12px;padding:5px 20px;">
+                <ul class="news-list">
+                    <li><span class="news-title"><a href="#">1.80合击版本英雄AI优化更新公告</a></span><span class="news-date js-date"></span></li>
+                    <li><span class="news-title"><a href="#">复古传奇法师职业魔法盾机制详解</a></span><span class="news-date js-date"></span></li>
+                    <li><span class="news-title"><a href="#">新版本祖玛寺庙BOSS刷新时间调整通知</a></span><span class="news-date js-date"></span></li>
+                    <li><span class="news-title"><a href="#">赤月恶魔打法与团队配置推荐</a></span><span class="news-date js-date"></span></li>
+                    <li><span class="news-title"><a href="#">SF123发布站本周精选服务器TOP10</a></span><span class="news-date js-date"></span></li>
+                    <li><span class="news-title"><a href="#">单职业切割版PK技巧：走位与技能衔接</a></span><span class="news-date js-date"></span></li>
+                    <li><span class="news-title"><a href="#">怀旧传奇战士装备强化优先级指南</a></span><span class="news-date js-date"></span></li>
+                    <li><span class="news-title"><a href="#">传奇私服选择指南：如何辨别优质长久服</a></span><span class="news-date js-date"></span></li>
+                </ul>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <div class="widget">
+                <h3 class="widget-title">🔥 热门搜索</h3>
+                <div class="hot-tags">
+                    <a href="#">sf123</a><a href="#">传奇私服</a><a href="#">1.76复古</a><a href="#">热血传奇</a><a href="#">怀旧传奇</a><a href="#">传奇SF</a><a href="#">1.80合击</a><a href="#">单职业</a><a href="#">我本沉默</a><a href="#">超变传奇</a><a href="#">传奇发布站</a><a href="#">新开传奇</a>
+                </div>
+            </div>
+            <div class="widget">
+                <h3 class="widget-title">🏆 人气排行</h3>
+                <ul class="rank-list">
+                    <li><a href="#">龙腾复古 — 1.76金币版</a></li>
+                    <li><a href="#">霸业合击 — 1.80星王</a></li>
+                    <li><a href="#">战神单职业 — 切割无限刀</a></li>
+                    <li><a href="#">烈焰传奇 — 我本沉默</a></li>
+                    <li><a href="#">盛世龙城 — 1.76复古</a></li>
+                    <li><a href="#">王者归来 — 超变微端</a></li>
+                    <li><a href="#">热血传说 — 1.85玉兔</a></li>
+                    <li><a href="#">不灭战纪 — 中变靓装</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3 class="widget-title">🕐 当前时间</h3>
+                <div style="text-align:center;padding:15px 0;">
+                    <div style="font-size:32px;font-weight:900;color:#f5c842;" id="sidebarTime">--:--:--</div>
+                    <div style="font-size:13px;color:#888;margin-top:8px;" id="sidebarDate">加载中...</div>
+                </div>
+            </div>
+            <div class="widget">
+                <h3 class="widget-title">📊 站点统计</h3>
+                <div style="font-size:13px;color:#999;line-height:2.2;">
+                    <div>收录服务器：<strong style="color:#f5c842;">12,860</strong> 个</div>
+                    <div>今日新开：<strong style="color:#4caf50;">36</strong> 个</div>
+                    <div>累计访问：<strong style="color:#ff6a00;">5,230,000+</strong></div>
+                    <div>最近更新：<span class="js-date" style="color:#ccc;"></span></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="section-title"><h2>🖼️ 复古游戏画面</h2><a href="#" class="more-link">更多截图 &raquo;</a></div>
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="https://picsum.photos/seed/retro-pixel-town/300/200" alt="复古传奇比奇城 - 经典游戏城镇画面"><div class="gallery-caption">比奇城 · 经典场景</div></div>
+        <div class="gallery-item"><img src="https://picsum.photos/seed/retro-pixel-boss/300/200" alt="复古传奇祖玛教主 - 经典BOSS战画面"><div class="gallery-caption">祖玛教主 · BOSS战</div></div>
+        <div class="gallery-item"><img src="https://picsum.photos/seed/retro-pixel-pvp/300/200" alt="复古传奇PK对战 - 经典玩家PK画面"><div class="gallery-caption">激情PK · 热血对战</div></div>
+        <div class="gallery-item"><img src="https://picsum.photos/seed/retro-pixel-treasure/300/200" alt="复古传奇装备掉落 - 经典打宝画面"><div class="gallery-caption">极品爆装 · 满屏光柱</div></div>
+    </div>
+
+    <div class="section-title"><h2>⭐ 精品版本推荐</h2></div>
+    <div class="grid-4">
+        <div class="card"><img class="card-img" src="https://picsum.photos/seed/retro-v176-gold/300/180" alt="1.76金币版传奇" style="height:140px;"><div class="card-body"><h3><a href="#">1.76金币版</a></h3><p>最经典的复古版本，无英雄无内功，纯手动打怪。</p></div></div>
+        <div class="card"><img class="card-img" src="https://picsum.photos/seed/retro-v180-star/300/180" alt="1.80星王合击传奇" style="height:140px;"><div class="card-body"><h3><a href="#">1.80星王合击</a></h3><p>英雄合击玩法，多种职业组合，技能连招爽快。</p></div></div>
+        <div class="card"><img class="card-img" src="https://picsum.photos/seed/retro-single-class/300/180" alt="单职业切割传奇" style="height:140px;"><div class="card-body"><h3><a href="#">单职业切割</a></h3><p>刀刀暴击刀刀切割，上线满VIP，散人称霸。</p></div></div>
+        <div class="card"><img class="card-img" src="https://picsum.photos/seed/retro-silence-version/300/180" alt="我本沉默传奇" style="height:140px;"><div class="card-body"><h3><a href="#">我本沉默</a></h3><p>独有沉默版本，铜域、水域、木域套装系统。</p></div></div>
+    </div>
+
+    <div class="section-title"><h2>📖 关于 SF123 传奇发布站</h2></div>
+    <div style="background:#16162a;border:1px solid #2a2a4a;border-radius:12px;padding:25px 30px;font-size:14px;color:#aaa;line-height:2;">
+        <p><strong style="color:#f5c842;">SF123</strong> 是国内领先的热血传奇怀旧私服发布站，致力于为广大传奇玩家提供最全面、最及时的传奇私服开服信息。我们每日精选收录各类<strong style="color:#ddd;">复古传奇</strong>、<strong style="color:#ddd;">怀旧传奇</strong>、<strong style="color:#ddd;">1.76金币版</strong>、<strong style="color:#ddd;">1.80英雄合击</strong>、<strong style="color:#ddd;">单职业切割</strong>等经典版本。</p>
+        <p style="margin-top:10px;">作为专业的<strong style="color:#f5c842;">传奇发布站</strong>，SF123严格审核每一个收录的传奇私服，确保服务器质量和玩家体验。找<strong style="color:#f5c842;">传奇私服</strong>，上<strong style="color:#f5c842;">SF123</strong>！让我们一起重温那段热血燃烧的传奇岁月！</p>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-keywords"><h4>🔗 快捷导航</h4><div class="kw-links"><a href="./">sf123</a><a href="./">传奇私服</a><a href="./">热血传奇</a><a href="./">怀旧传奇</a><a href="./">传奇发布站</a><a href="./">传奇SF</a><a href="./">传奇私服发布</a><a href="./">新开传奇</a><a href="./">复古传奇</a></div></div>
+        <div class="footer-keywords"><h4>🔗 版本分类</h4><div class="kw-links"><a href="./">1.76复古传奇</a><a href="./">1.76金币版</a><a href="./">1.80英雄合击</a><a href="./">1.80星王合击</a><a href="./">单职业传奇</a><a href="./">切割传奇</a><a href="./">我本沉默</a><a href="./">超变传奇</a><a href="./">中变传奇</a><a href="./">微变传奇</a></div></div>
+        <div class="footer-keywords"><h4>🔗 热门攻略</h4><div class="kw-links"><a href="./">传奇新手攻略</a><a href="./">沙巴克攻城攻略</a><a href="./">石墓阵走法</a><a href="./">赤月恶魔打法</a><a href="./">祖玛寺庙攻略</a><a href="./">传奇装备大全</a><a href="./">战士PK技巧</a><a href="./">法师练级路线</a><a href="./">道士打宝攻略</a></div></div>
+        <div class="footer-keywords"><h4>🔗 友情链接</h4><div class="kw-links"><a href="./">sf123发布站</a><a href="./">sf123传奇</a><a href="./">传奇sf发布网</a><a href="./">传奇开服网</a><a href="./">传奇私服网</a><a href="./">好传奇发布站</a><a href="./">最新传奇私服</a><a href="./">精品传奇</a></div></div>
+        <div class="footer-links"><a href="#">关于我们</a><a href="#">免责声明</a><a href="#">广告投放</a><a href="#">联系客服</a><a href="#">网站地图</a></div>
+        <div class="footer-copyright">
+            <p>© <span id="footerYear">2025</span> <strong>SF123</strong> 原版精品海量热血传奇怀旧传奇SiFu发布站 — All Rights Reserved</p>
+            <p>本站所有传奇私服信息均由用户发布，请注意甄别，谨防上当受骗。</p>
+            <p style="margin-top:5px;"><span class="js-full-datetime"></span></p>
+        </div>
+    </div>
+</footer>
+
+<button class="back-top" id="backTop" title="返回顶部">↑</button>
+
+<script>
+(function(){
+    var weekDays = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+    function padZero(n){ return n < 10 ? '0' + n : '' + n; }
+    function getFullDateStr(){ var now = new Date(); return now.getFullYear() + '年' + padZero(now.getMonth()+1) + '月' + padZero(now.getDate()) + '日 ' + weekDays[now.getDay()]; }
+    function getShortDateStr(){ var now = new Date(); return now.getFullYear() + '-' + padZero(now.getMonth()+1) + '-' + padZero(now.getDate()); }
+    function getTimeStr(){ var now = new Date(); return padZero(now.getHours()) + ':' + padZero(now.getMinutes()) + ':' + padZero(now.getSeconds()); }
+    function getServerOpenTime(offset){ var now = new Date(); now.setHours(now.getHours() + offset); return padZero(now.getMonth()+1) + '-' + padZero(now.getDate()) + ' ' + padZero(now.getHours()) + ':' + padZero(now.getMinutes()); }
+    function updateDateTime(){
+        var dateStr = getFullDateStr(), shortDate = getShortDateStr(), timeStr = getTimeStr();
+        var hDate = document.getElementById('headerDate'), hTime = document.getElementById('headerTime');
+        if(hDate) hDate.textContent = dateStr; if(hTime) hTime.textContent = timeStr;
+        var sTime = document.getElementById('sidebarTime'), sDate = document.getElementById('sidebarDate');
+        if(sTime) sTime.textContent = timeStr; if(sDate) sDate.textContent = dateStr;
+        document.querySelectorAll('.news-date.js-date').forEach(function(el){ el.textContent = shortDate; });
+        var cells = document.querySelectorAll('.js-datetime-cell'); var offsets = [-2,-1,-3,2,-4,5,-1,-6];
+        for(var j=0;j<cells.length;j++) cells[j].textContent = getServerOpenTime(offsets[j]||0);
+        document.querySelectorAll('.js-full-datetime').forEach(function(el){ el.textContent = '当前时间：' + dateStr + ' ' + timeStr; });
+    }
+    updateDateTime(); setInterval(updateDateTime, 1000);
+    var yearEl = document.getElementById('footerYear'); if(yearEl) yearEl.textContent = new Date().getFullYear();
+    var btn = document.getElementById('backTop');
+    window.addEventListener('scroll', function(){ btn.classList.toggle('show', window.scrollY > 400); });
+    btn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+    if('IntersectionObserver' in window){
+        var observer = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting){ e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }}); }, {threshold:0.1});
+        document.querySelectorAll('.card,.gallery-item').forEach(function(el){ el.style.opacity='0'; el.style.transform='translateY(20px)'; el.style.transition='opacity .5s ease,transform .5s ease'; observer.observe(el); });
+    }
+})();
+</script>
+
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KV2bPUwVeR3jCIFM",ck:"KV2bPUwVeR3jCIFM"})</script>
+</body>
+</html>
